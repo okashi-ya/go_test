@@ -5,6 +5,7 @@ before:
     - go mod tidy
     - go install github.com/tc-hib/go-winres@latest
     - go generate winres/init.go
+    - go-winres init
     - go-winres make
 release:
   draft: true
