@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 env:
-  BINARY_PREFIX: "go-cqhttp_"
+  BINARY_PREFIX: "gotest"
   BINARY_SUFFIX: ""
   COMMIT_ID: "${{ github.sha }}"
   PR_PROMPT: "::warning:: Build artifact will not be uploaded due to the workflow is trigged by pull request."
