@@ -6,14 +6,9 @@ import (
 	"time"
 )
 
-var Version = "test"
-
 func main() {
-	// info, ok := debug.ReadBuildInfo()
-	//if ok {
-	//	fmt.Printf(info.Main.Version)
-	//}
-	fmt.Printf("Version %s", Version)
+
+	fmt.Printf("Version %s\n", u.Version)
 	fmt.Printf("OK!Success! uuid = %s", u.GetUid())
 	for {
 		time.Sleep(1)
