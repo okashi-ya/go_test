@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	fmt.Printf("Version %s\n", u.Version)
+	fmt.Printf("Version %s\n", u.V())
 	fmt.Printf("OK!Success! uuid = %s", u.GetUid())
 	for {
 		time.Sleep(1)
