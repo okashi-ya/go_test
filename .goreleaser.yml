@@ -34,7 +34,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -s -w -X main.go/u.Version=v{{.Version}}
+      - -s -w -X main.go/u/orders.Version=v{{.Version}}
   - id: win
     env:
       - CGO_ENABLED=0
@@ -52,4 +52,4 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -s -w -X main.go/u.Version=v{{.Version}}
+      - -s -w -X main.go/u/orders.Version=v{{.Version}}
