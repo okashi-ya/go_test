@@ -53,3 +53,20 @@ builds:
       - -trimpath
     ldflags:
       - -s -w -X main.go/u/orders.Version=v{{.Version}}
+
+archives:
+  - id: binary
+    builds:
+      - win
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+    format_overrides:
+      - goos: windows
+        format: binary
+  - id: nowin
+    builds:
+      - nowin
+      - win
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+    format_overrides:
+      - goos: windows
+        format: zip
