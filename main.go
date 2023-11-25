@@ -2,14 +2,12 @@ package main
 
 import (
 	"fmt"
-	"main.go/u"
+	"main.go/u/orders"
 	"time"
 )
 
 func main() {
-
-	fmt.Printf("Version %s\n", u.V())
-	fmt.Printf("OK!Success! uuid = %s", u.GetUid())
+	fmt.Printf("Version %s", orders.Version)
 	for {
 		time.Sleep(1)
 	}
